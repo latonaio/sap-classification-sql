@@ -1,0 +1,28 @@
+CREATE TABLE `sap-classification-classification-data`
+(
+  `DeleteMc`                   tinyint(1) DEFAULT NULL,
+  `UpdateMc`                   tinyint(1) DEFAULT NULL,
+  `ToClassCharacteristicOc`    tinyint(1) DEFAULT NULL,
+  `ToClassDescriptionOc`       tinyint(1) DEFAULT NULL,
+  `ToClassKeywordOc`           tinyint(1) DEFAULT NULL,
+  `ToClassTextOc`              tinyint(1) DEFAULT NULL,
+  `ClassInternalID`            varchar(10) DEFAULT NULL,
+  `ClassType`                  varchar(3) DEFAULT NULL,
+  `ClassTypeName`              varchar(40) DEFAULT NULL,
+  `Class`                      varchar(18) DEFAULT NULL,
+  `ClassStatus`                varchar(1) DEFAULT NULL,
+  `ClassStatusName`            varchar(40) DEFAULT NULL,
+  `ClassGroup`                 varchar(40) DEFAULT NULL,
+  `ClassGroupName`             varchar(40) DEFAULT NULL,
+  `ClassSearchAuthGrp`         varchar(3) DEFAULT NULL,
+  `ClassClassfctnAuthGrp`      varchar(3) DEFAULT NULL,
+  `ClassMaintAuthGrp`          varchar(3) DEFAULT NULL,
+  `CreationDate`               date DEFAULT NULL,
+  `LastChangeDate`             date DEFAULT NULL,
+  `ValidityStartDate`          date DEFAULT NULL,
+  `ValidityEndDate`            date DEFAULT NULL,
+  `ClassLastChangedDateTime`   datetime DEFAULT NULL,
+  `KeyDate`                    date DEFAULT NULL,
+  PRIMARY KEY (`ClassInternalID`),
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4;
