@@ -1,12 +1,12 @@
 CREATE TABLE `sap-classification-classification-data`
 (
+  `ClassInternalID`            varchar(10) NOT NULL,
   `DeleteMc`                   tinyint(1) DEFAULT NULL,
   `UpdateMc`                   tinyint(1) DEFAULT NULL,
   `ToClassCharacteristicOc`    tinyint(1) DEFAULT NULL,
   `ToClassDescriptionOc`       tinyint(1) DEFAULT NULL,
   `ToClassKeywordOc`           tinyint(1) DEFAULT NULL,
   `ToClassTextOc`              tinyint(1) DEFAULT NULL,
-  `ClassInternalID`            varchar(10) DEFAULT NULL,
   `ClassType`                  varchar(3) DEFAULT NULL,
   `ClassTypeName`              varchar(40) DEFAULT NULL,
   `Class`                      varchar(18) DEFAULT NULL,

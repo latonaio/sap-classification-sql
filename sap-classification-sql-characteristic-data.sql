@@ -1,10 +1,9 @@
 CREATE TABLE `sap-classification-characteristic-data`
 (
-  `ClassInternalID`            varchar(10) DEFAULT NULL,
+  `ClassInternalID`            varchar(10) NOT NULL,
+  `CharcInternalID`            varchar(10) NOT NULL,
   `DeleteMc`                   tinyint(1) DEFAULT NULL,
   `UpdateMc`                   tinyint(1) DEFAULT NULL,
-  `ClassInternalID`            varchar(10) DEFAULT NULL,
-  `CharcInternalID`            varchar(10) DEFAULT NULL,
   `CharcPositionNumber`        varchar(3) DEFAULT NULL,
   `Characteristic`             varchar(30) DEFAULT NULL,
   `AncestorClassInternalID`    varchar(10) DEFAULT NULL,
