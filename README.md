@@ -13,7 +13,7 @@ https://api.sap.com/api/OP_API_CLFN_CLASS_SRV/overview
 
 sap-classification-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-classification-sql-classification-data.sql（SAP クラスデータ）
+* sap-classification-sql-class-data.sql（SAP クラス - クラスデータ）
 * sap-classification-sql-characteristic-data.sql（SAP クラス - 特性データ）
 * sap-classification-sql-class-description-data.sql（SAP クラス - クラス説明データ）
 

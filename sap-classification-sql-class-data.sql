@@ -1,4 +1,4 @@
-CREATE TABLE `sap-classification-classification-data`
+CREATE TABLE `sap_classification_class_data`
 (
   `ClassInternalID`            varchar(10) NOT NULL,
   `DeleteMc`                   tinyint(1) DEFAULT NULL,
@@ -17,12 +17,12 @@ CREATE TABLE `sap-classification-classification-data`
   `ClassSearchAuthGrp`         varchar(3) DEFAULT NULL,
   `ClassClassfctnAuthGrp`      varchar(3) DEFAULT NULL,
   `ClassMaintAuthGrp`          varchar(3) DEFAULT NULL,
-  `CreationDate`               date DEFAULT NULL,
-  `LastChangeDate`             date DEFAULT NULL,
-  `ValidityStartDate`          date DEFAULT NULL,
-  `ValidityEndDate`            date DEFAULT NULL,
-  `ClassLastChangedDateTime`   datetime DEFAULT NULL,
-  `KeyDate`                    date DEFAULT NULL,
+  `CreationDate`               varchar(80) DEFAULT NULL,
+  `LastChangeDate`             varchar(80) DEFAULT NULL,
+  `ValidityStartDate`          varchar(80) DEFAULT NULL,
+  `ValidityEndDate`            varchar(80) DEFAULT NULL,
+  `ClassLastChangedDateTime`   varchar(80) DEFAULT NULL,
+  `KeyDate`                    varchar(80) DEFAULT NULL,
   PRIMARY KEY (`ClassInternalID`),
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

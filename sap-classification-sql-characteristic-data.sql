@@ -1,4 +1,4 @@
-CREATE TABLE `sap-classification-characteristic-data`
+CREATE TABLE `sap_classification_characteristic_data`
 (
   `ClassInternalID`            varchar(10) NOT NULL,
   `CharcInternalID`            varchar(10) NOT NULL,
@@ -12,11 +12,11 @@ CREATE TABLE `sap-classification-characteristic-data`
   `CharcIsPrintRelevant`       varchar(1) DEFAULT NULL,
   `CharcIsSearchRelevant`      varchar(1) DEFAULT NULL,
   `CharcIsDisplayRelevant`     varchar(1) DEFAULT NULL,
-  `ValidityStartDate`          date DEFAULT NULL,
-  `ValidityEndDate`            date DEFAULT NULL,
-  `KeyDate`                    date DEFAULT NULL,
-  `ClassLastChangedDateTime`   datetime DEFAULT NULL,
+  `ValidityStartDate`          varchar(80) DEFAULT NULL,
+  `ValidityEndDate`            varchar(80) DEFAULT NULL,
+  `KeyDate`                    varchar(80) DEFAULT NULL,
+  `ClassLastChangedDateTime`   varchar(80) DEFAULT NULL,
   PRIMARY KEY (`ClassInternalID`, `CharcInternalID`),
-  CONSTRAINT (`ClassInternalID`) FOREIGN KEY (`ClassInternalID`) REFERENCES `sap-classification-classification-data` (`ClassInternalID`)
+  CONSTRAINT (`SAPClassificationCharacteristicData_fk`) FOREIGN KEY (`ClassInternalID`) REFERENCES `sap_classification_class_data` (`ClassInternalID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
