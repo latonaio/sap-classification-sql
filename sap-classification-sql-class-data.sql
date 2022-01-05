@@ -23,6 +23,6 @@ CREATE TABLE `sap_classification_class_data`
   `ValidityEndDate`            varchar(80) DEFAULT NULL,
   `ClassLastChangedDateTime`   varchar(80) DEFAULT NULL,
   `KeyDate`                    varchar(80) DEFAULT NULL,
-  PRIMARY KEY (`ClassInternalID`),
+  PRIMARY KEY (`ClassInternalID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

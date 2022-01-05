@@ -17,6 +17,6 @@ CREATE TABLE `sap_classification_characteristic_data`
   `KeyDate`                    varchar(80) DEFAULT NULL,
   `ClassLastChangedDateTime`   varchar(80) DEFAULT NULL,
   PRIMARY KEY (`ClassInternalID`, `CharcInternalID`),
-  CONSTRAINT (`SAPClassificationCharacteristicData_fk`) FOREIGN KEY (`ClassInternalID`) REFERENCES `sap_classification_class_data` (`ClassInternalID`)
+  CONSTRAINT `SAPClassificationCharacteristicData_fk` FOREIGN KEY (`ClassInternalID`) REFERENCES `sap_classification_class_data` (`ClassInternalID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
